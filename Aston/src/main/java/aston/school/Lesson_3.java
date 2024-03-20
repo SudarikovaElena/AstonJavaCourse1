@@ -27,6 +27,8 @@ public class Lesson_3 {
         //Добавляю аттракционы через метод, а не конструктор
         detskiyPark.addAttraction("Чертово колесо", "08:00", "20:00", 150.00);
         detskiyPark.addAttraction("Машинки", "10:00", "21:00", 250.00);
+        detskiyPark.addAttraction("Тир", "11:00", "21:30", 200.00);
+        detskiyPark.addAttraction("Батут", "10:00", "20:30", 250.00);
         detskiyPark.getParkInfo();
     }
 }

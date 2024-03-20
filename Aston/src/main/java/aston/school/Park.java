@@ -48,10 +48,11 @@ public class Park {
     }
 
     public void getParkInfo() {
-        System.out.println("Добавлено " + amountOdAddedAttractions + " аттракционов из " + maxAmountOfAttractions);
-//        for (int i = 1; i <= amountOdAddedAttractions; i++) {
-//            System.out.println("Аттракцион № "+i+" "+ Arrays.toString(attractionsArray[i]));
-//        }
+        System.out.println("Добавлено " + amountOdAddedAttractions + " аттракциона(ов) из " + maxAmountOfAttractions);
+        for (int i = 1; i <= amountOdAddedAttractions; i++) {
+            System.out.println("Аттракцион № "+ i +" "+ attractionsArray[i-1].attractionName);
+        }
+
     }
 }
 
