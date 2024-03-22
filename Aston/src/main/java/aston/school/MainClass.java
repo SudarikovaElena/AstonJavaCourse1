@@ -51,12 +51,29 @@ public class MainClass {
         catsArray[4].getCatFullnessInfo();
 
         //Геометрические фигуры
+        //Круг
         Circle circle1 = new Circle(1);
         circle1.perimeter();
         circle1.square();
-        //circle1.setBorderColor("Синий");
-        //circle1.setFillingColor("Белый");
-        circle1.printCircleInfo();
+        circle1.setBorderColor("Синий");
+        circle1.setFillingColor("Белый");
+        circle1.printInfo();
+
+        //Прямоугольник
+        Rectangle rectangle1 = new Rectangle(1,2);
+        rectangle1.perimeter();
+        rectangle1.square();
+        rectangle1.setBorderColor("Белый");
+        rectangle1.setFillingColor("Синий");
+        rectangle1.printInfo();
+
+        //Треугольник
+        Triangle triangle1 = new Triangle(4,6, 7);
+        triangle1.perimeter();
+        triangle1.square();
+        triangle1.setBorderColor("Фиолетовый");
+        triangle1.setFillingColor("Темно-фиолетовый");
+        triangle1.printInfo();
 
     }
 }
