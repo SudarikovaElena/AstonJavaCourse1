@@ -2,6 +2,7 @@ package aston.school;
 
 public class MainClass {
     public static void main(String[] args) {
+        //Коты
         Animal animal1 = new Animal("Какое-то животное");
         animal1.run(400);
         Animal.printAnimalsInfo();
@@ -48,6 +49,14 @@ public class MainClass {
         catsArray[2].getCatFullnessInfo();
         catsArray[3].getCatFullnessInfo();
         catsArray[4].getCatFullnessInfo();
+
+        //Геометрические фигуры
+        Circle circle1 = new Circle(1);
+        circle1.perimeter();
+        circle1.square();
+        //circle1.setBorderColor("Синий");
+        //circle1.setFillingColor("Белый");
+        circle1.printCircleInfo();
 
     }
 }
