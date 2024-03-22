@@ -10,14 +10,14 @@ public class Animal {
     }
 
     public void run(int distance) {
-        System.out.println("Животное пробежало "+distance+" метров");
+        System.out.println("Животное пробежало " + distance + " метров");
     }
 
     public void swim(int distance) {
-        System.out.println("Животное проплыло "+distance+" метров");
+        System.out.println("Животное проплыло " + distance + " метров");
     }
 
     public static void printAnimalsInfo() {
-        System.out.println("Создано "+animalsCount+" животных");
+        System.out.println("Создано " + animalsCount + " животных");
     }
 }
