@@ -6,10 +6,12 @@ public class Cat extends Animal {
     public static int catsCount = 0;
     private boolean fullness = false;
     private int amountOfFoodInTheBowl = 100;
+    private CommonBowl bowl;
 
     public Cat(String name) {
         super(name);
         catsCount++;
+        this.bowl = new CommonBowl(500);
     }
 
     @Override
@@ -34,6 +36,8 @@ public class Cat extends Animal {
     public void eatFromTheCatBowl(int amountOfFoodToEat) {
         if (amountOfFoodToEat <= amountOfFoodInTheBowl) {
             amountOfFoodInTheBowl -= amountOfFoodToEat;
+            //TODO: изменить персональную миску в классе Cat - сделать ее объектом класса CommonBowl, класс CommonBowl переименовать в Bowl.
+            //this.bowl.deleteFoodFromTheBowl(amountOfFoodToEat);
             fullness = true;
             System.out.println("Котик скушал " + amountOfFoodToEat + " еды. Котик " + name + " сыт");
         } else {
@@ -58,7 +62,7 @@ public class Cat extends Animal {
     }
 
     public void getCatFullnessInfo() {
-        if (fullness) {
+        if (this.fullness) {
             System.out.println("Кот " + name + " сыт");
         } else {
             System.out.println("Кот " + name + " голоден");

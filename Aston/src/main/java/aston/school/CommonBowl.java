@@ -32,14 +32,4 @@ public class CommonBowl {
         }
     }
 
-//    public boolean eatFromCommonBowl(Cat cat, int amountOfFoodToEat) {
-//        if (amountOfFoodToEat > amountOfFoodInTheBowl) {
-//            System.out.println("Недостаточное количество еды в миске: " + amountOfFoodInTheBowl + " вместо " + amountOfFoodToEat);
-//        } else {
-//            amountOfFoodInTheBowl -= amountOfFoodToEat;
-//            System.out.println("Котик " + cat.name + " скушал " + amountOfFoodToEat + " еды.");
-//            return true;
-//        }
-//
-//    }
 }
