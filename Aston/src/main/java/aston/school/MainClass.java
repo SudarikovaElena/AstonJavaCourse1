@@ -6,7 +6,7 @@ public class MainClass {
             Exceptions_Lesson ex = new Exceptions_Lesson();
             String[][] stringArray = {
                     {"0", "15", "-5", "-9"},
-                    {"0", "15", "-5", "-8","11"},
+                    {"0", "15", "-5", "-8"},
                     {"0", "15", "-5", "-7"},
                     {"0", "15", "-5", "-6"},
                     //{"0", "15", "-5", "-6"}
@@ -14,6 +14,8 @@ public class MainClass {
             ex.sumArrayItems(stringArray);
         } catch (MyArraySizeException e) {
             //e.printStackTrace();
+            System.out.println(e.getMessage());
+        } catch (MyArrayDataException e) {
             System.out.println(e.getMessage());
         }
         System.out.println("Программа продолжила выполнение");
