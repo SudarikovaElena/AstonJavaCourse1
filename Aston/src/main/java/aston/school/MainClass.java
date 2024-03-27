@@ -11,14 +11,17 @@ public class MainClass {
                     {"0", "15", "-5", "-6"},
                     //{"0", "15", "-5", "-6"}
             };
-            ex.sumArrayItems(stringArray);
-        } catch (MyArraySizeException e) {
+            int sum = ex.sumArrayItems(stringArray);
+            System.out.println("Sum of the array elements = " + sum);
+        }
+        catch (MyArraySizeException e) {
             //e.printStackTrace();
             System.out.println(e.getMessage());
-        } catch (MyArrayDataException e) {
+        }
+        catch (MyArrayDataException e) {
             System.out.println(e.getMessage());
         }
-        System.out.println("Программа продолжила выполнение");
+        System.out.println("The program continues execution");
     }
 
 }
